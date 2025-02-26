@@ -2,6 +2,7 @@ import pytest
 
 
 #Add testcases Here
+from foo_bar_baz import foo_bar_baz
 
 def my_foo_bar_baz(n: int) -> str:
     return_str = ""
@@ -19,5 +20,4 @@ def my_foo_bar_baz(n: int) -> str:
     return return_str
 
 def test_1():
-    from foo_bar_baz import foo_bar_baz
     assert(foo_bar_baz(15) == my_foo_bar_baz(15))
